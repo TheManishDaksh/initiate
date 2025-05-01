@@ -14,7 +14,7 @@ const anthropic = new Anthropic({
   apiKey: 'my_api_key', 
 });
 
-app.post("template", async(req, res)=>{
+app.post("/template", async(req, res)=>{
     const prompt = req.body.prompt;
     const response = await anthropic.messages.create({
         model: "claude-3-7-sonnet-20250219",
@@ -43,7 +43,7 @@ app.post("template", async(req, res)=>{
         }    
 })
 
-app.post("chat", async(req, res)=>{
+app.post("/chat", async(req, res)=>{
     const message = req.body.message;
     const response = await anthropic.messages.create({
         messages : message,
