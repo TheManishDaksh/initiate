@@ -23,3 +23,12 @@ export interface fileItem {
     content? : string,
     children? : fileItem[]
 }
+
+export interface FileViewerProps {
+    file : fileItem | null,
+    onClose : ()=>void
+}
+
+export interface CodeEditorProps {
+    file : fileItem | null
+}

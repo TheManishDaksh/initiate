@@ -7,7 +7,7 @@ interface SteplistProps {
     onStepClick : (stepId : number)=>void
 }
 
-export function Stepslist({steps, currentStep, onStepClick}:SteplistProps){
+export default function Stepslist({steps, currentStep, onStepClick}:SteplistProps){
 
     return(
         <div>

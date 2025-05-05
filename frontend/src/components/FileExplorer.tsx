@@ -60,7 +60,7 @@ function FileNode({item, depth, onFileClick} : FileNodeProps ){
     )
 }
 
-export function FileExplorer({files, onFileSelect} : FileExplorerProps){
+export default function FileExplorer({files, onFileSelect} : FileExplorerProps){
     return (
         <div>
            <h2>File Explorer</h2>

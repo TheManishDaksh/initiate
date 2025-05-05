@@ -1,10 +1,5 @@
-import { useLocation } from "react-router-dom";
-
 
 function Builder(){
-    
-    const location = useLocation()
-    const prompt = location.state
     
     return ( 
         <div>
