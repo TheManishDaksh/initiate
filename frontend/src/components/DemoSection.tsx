@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { itemFadeIn, staggerContainer } from '../animations/variants';
+import { itemFadeIn } from '../animations/variants';
 
 const DemoSection: React.FC = () => {
   const [prompt, setPrompt] = useState("Create a modern e-commerce homepage with product grid");
@@ -12,8 +12,6 @@ const DemoSection: React.FC = () => {
     
     setIsGenerating(true);
     setShowResult(false);
-    
-    // Simulate generation process
     setTimeout(() => {
       setIsGenerating(false);
       setShowResult(true);

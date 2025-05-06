@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { codeRevealAnimation } from '../animations/variants';
 
 const CodeAnimation: React.FC = () => {
   const [showResult, setShowResult] = useState(false);

@@ -1,14 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Features from '../components/Features';
-import HowItWorks from '../components/HowItWorks';
-import DemoSection from '../components/DemoSection';
-import Testimonials from '../components/Testimonials';
-import Pricing from '../components/Pricing';
-import Faq from '../components/Faq';
-import Footer from '../components/Footer';
+import {Navbar, Hero, Features, HowItWorks, DemoSection, Testimonials, Pricing, Faq, Footer} from '../components';
 import { fadeIn } from '../animations/variants';
 
 const LandingPage: React.FC = () => {
