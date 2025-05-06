@@ -1,16 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Builder, Landing, Prompt } from "./pages";
+import { Route, Routes } from 'react-router-dom';
+import { LandingPage, Prompt, Builder } from './pages';
 
-function App(){
+function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={ <Landing/> }/>
+       <Routes>
+          <Route path="/" element={ <LandingPage/> }/>
           <Route path="/prompt" element={ <Prompt/> }/>
           <Route path="/builder" element={ <Builder/> }/>
         </Routes>
-      </BrowserRouter>
     </div>
   )
 }

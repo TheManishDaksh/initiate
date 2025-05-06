@@ -1,10 +1,8 @@
 
-function Builder(){
-    
-    return ( 
+export default function Builder(){
+    return (
         <div>
             Builder
         </div>
     )
 }
-export default Builder;
