@@ -1,4 +1,4 @@
-export enum stepType {
+export enum StepType {
     CreateFile,
     CreateFolder,
     EditFile,
@@ -6,14 +6,19 @@ export enum stepType {
     RunScript
 }
 
-export interface step { 
+export interface Step { 
     id : number,
     title : string,
     description : string,
-    type : stepType,
+    type : StepType,
     status : "pending"| "progressing" | "completed",
     code? : string,
     path? : string
+}
+
+export interface Project {
+    prompt : string,
+    steps : Step[]
 }
 
 export interface fileItem {
