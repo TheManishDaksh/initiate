@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             variants={itemFadeIn}
           >
             Create stunning websites <br className="hidden md:block" />
-            <span className="relative">
+            <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-cyan-200 leading-tight">
               powered by AI
               <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-cyan-500"></span>
             </span>
