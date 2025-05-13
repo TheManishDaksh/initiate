@@ -24,14 +24,14 @@ export default function Builder(){
 
     useEffect(()=>{
         let originalFiles = [...files];
-        let updateHappened = false;
-        steps.filter(({status})=> status === "pending").map(step =>{
-            updateHappened = true;
-            if( step.type === StepType.CreateFile){
-                let parsedPath = step.path?.split("/") ?? [];
-                let currentFileStructure = [...originalFiles]
-                let finalAnswerRef = currentFileStructure;
-
+        let updateHappened = false
+        steps.filter(({status})=> status === "pending").map(step=>{
+          updateHappened = true;
+          if(step.type === StepType.CreateFile){
+            let parsedPath = step.path?.split("/") ?? [];
+            let currentFileStructure = [...originalFiles];
+            let finalAnswerRef = currentFileStructure;
+  
                 let currentFolder = "";
                 while(parsedPath.length){
                     currentFolder = `${currentFolder}/${parsedPath[0]}`
